@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'detailsPage.dart';
+import 'package:badges/badges.dart';
 
 void main() {
   runApp(MyApp());
@@ -110,6 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                   
            children: <Widget>[
              Container(
                height: 65.0,
@@ -129,23 +131,99 @@ class _MyHomePageState extends State<MyHomePage> {
                ),
              ),
 
-     Container(
-               height: 65.0,
-               width: 60.0,
-               decoration: BoxDecoration(
+            //  Container(
+               
+
+            //  ),
+// Badge(
+//     height: 65.0,
+//                width: 60.0,
+//                decoration: BoxDecoration(
+//                  border: Border.all(
+//                    color: Colors.grey,
+//                    style:BorderStyle.solid,
+//                    width: 1.0
+//                  ),
+//                  borderRadius: BorderRadius.circular(10.0)
+//                ),
+               
+//                child: Center(
+                 
+//                  child: Icon(Icons.shopping_basket,
+//                  color: Colors.black,
+              
+//                   ),
+                   
+//                ),
+
+// )
+
+Container(
+  height: 65.0,
+  width: 60.0,
+  decoration: BoxDecoration(
+                  
                  border: Border.all(
                    color: Colors.grey,
                    style:BorderStyle.solid,
                    width: 1.0
                  ),
-                 borderRadius: BorderRadius.circular(10.0)
-               ),
-               child: Center(
-                 child: Icon(Icons.shopping_basket,
+                 borderRadius: BorderRadius.circular(10.0),
+                
+  ),
+  
+  child:   Center(
+  
+    child: 
+    Badge(
+        
+        position: BadgePosition.topRight(top: 0, right: 2),
+        badgeContent: Text('3'),
+        
+      child: Icon(Icons.shopping_basket,
                  color: Colors.black,
-                  ),
+                 
+    ),
+    ),
+    
+    )
+    
+),
+
+
+    //  Container(
+    //            height: 65.0,
+    //            width: 60.0,
+    //            decoration: BoxDecoration(
+
+
+    //              border: Border.all(
+    //                color: Colors.grey,
+    //                style:BorderStyle.solid,
+    //                width: 1.0
+    //              ),
+    //              borderRadius: BorderRadius.circular(10.0)
+    //            ),
+               
+    //            child: Center(
+                 
+    //              child: Icon(Icons.shopping_basket,
+    //              color: Colors.black,
+            
+    //               ),
+                   
+    //            ),
+    //          ),
+
+
+             Container(
+               child: Row(
+                 children: <Widget>[
+                   
+                 ],
                ),
              ),
+
 
      Container(
                height: 65.0,
@@ -159,7 +237,9 @@ class _MyHomePageState extends State<MyHomePage> {
                  borderRadius: BorderRadius.circular(10.0),
                   color: Color(0xFF1C1428)
                ),
+               
                child: Center(
+                 
                  child: Text('Checkout',
                  style:TextStyle(
                    fontFamily: 'Montserrat',
@@ -167,6 +247,7 @@ class _MyHomePageState extends State<MyHomePage> {
                    fontSize: 15.0
                  ))
                ),
+                
              ),
 
 
